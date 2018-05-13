@@ -11,7 +11,7 @@ pipeline {
         echo 'build'
       }
     }
-    stage('unit-test') {
+    stage('testing-phase') {
       parallel {
         stage('unit-test') {
           steps {
@@ -26,6 +26,11 @@ pipeline {
         stage('static-code-analysis') {
           steps {
             echo 'static code analysis'
+          }
+        }
+        stage('performance-test') {
+          steps {
+            echo 'performance test'
           }
         }
       }
