@@ -33,6 +33,11 @@ pipeline {
             echo 'performance test'
           }
         }
+        stage('test-suite1') {
+          steps {
+            echo 'test suite 1'
+          }
+        }
       }
     }
     stage('package') {
