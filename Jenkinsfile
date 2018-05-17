@@ -9,7 +9,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'build'
-        echo "${env.BRANCH_NAME}""
+        echo "${env.BRANCH_NAME}"
         echo "${env}"
       }
     }
