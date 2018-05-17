@@ -9,7 +9,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'build'
-        echo scm.branches[0].name
+        echo ${env}
       }
     }
     stage('testing-phase') {
