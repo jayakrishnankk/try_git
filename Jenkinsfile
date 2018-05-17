@@ -9,6 +9,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'build'
+        echo 'scm.branches[0].name'
       }
     }
     stage('testing-phase') {
